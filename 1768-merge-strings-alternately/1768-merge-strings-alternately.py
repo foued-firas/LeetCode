@@ -16,14 +16,14 @@ class Solution(object):
                 for i in range(k):
                     merged.append(word1[i])
                     merged.append(word2[i])
-                merged.extend(word1[k:])   # fix here: extend the leftover substring
+                merged.extend(word1[k:])  
             
             else:
                 k = len(word1)
                 for i in range(k):
                     merged.append(word1[i])
                     merged.append(word2[i])
-                merged.extend(word2[k:])   # fix here: extend the leftover substring
+                merged.extend(word2[k:])  
             
             resultat = ''.join(merged)
             return resultat
